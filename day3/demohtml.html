@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Demo html 02</title>
+	</head>
+	<body>
+		<table border="1" cellspacing="0" cellpadding="8">
+			<tr>
+				<th>Tiêu đề 1</th>
+				<th>Tiêu đề 2</th>
+				<th>Tiêu đề 3</th>
+				<th>Tiêu đề 4</th>
+			</tr>
+			<tr>
+				<td>R1 D1</td>
+				<td>R1 D2</td>
+				<td>R1 D3</td>
+				<td>R1 D4</td>
+			</tr>
+			<tr>
+				<td>R2 D1</td>
+				<td>R2 D2</td>
+				<td>R2 D3</td>
+				<td>R2 D4</td>
+			</tr>
+		</table>
+		<hr>	
+		<table border="1" cellspacing="0" cellpadding="8">
+			<tr>
+				<th>Tiêu đề 1</th>
+				<th>Tiêu đề 2</th>
+				<th>Tiêu đề 3</th>
+				<th>Tiêu đề 4</th>
+			</tr>
+			<tr>
+				<td colspan="3">R1 D1</td>
+				<td>R1 D2</td>
+				<!-- <td>R1 D3</td>
+				<td>R1 D4</td> -->
+			</tr>
+			<tr>		
+				<td rowspan="2">R2 D1</td>
+				<td>R2 D2</td>
+				<td>R2 D3</td>
+				<td>R2 D4</td>
+			</tr>
+			<tr>
+				<td>R3 D1</td>
+				<td>R3 D2</td>
+				<td>R3 D3</td>
+				<!-- <td>R3 D4</td> -->
+			</tr>
+		</table>
+		<ol>
+			<li> thẻ li 1</li>
+			<li> thẻ li 2</li>
+			<li> thẻ li 3</li>
+		</ol>
+		<!-- type=square/disc/circle -->
+		<ul type="disc">
+			<li> thẻ li 1</li>
+			<li> thẻ li 2</li>
+			<li> thẻ li 3</li>
+		</ul>
+		<a href="#" target="_blank">
+			tới trang gg
+		</a>
+		<br>
+		<a href="C:\PHP0721e_demo\day02\PTD.html">
+			Let'go !
+		</a>
+		<br>
+		<!-- name dừng để server nhận biết được dữ liệu đến từ inphut nào -->
+		<form action="" method="post">
+			Nhập tên của bạn:
+			<input type="text" name="Tên">
+			<input type="submit" name="" value="Gửi thông tin">
+		</form>
+		<form action="" method="post">
+			Username:
+			<input type="text" name="users" value="UserBasic">
+			<br>
+			Age:
+			<input type="number" name="age" placeholder="Your age">
+			<br>
+			Password:
+			<input type="Password" name="password">
+			<br>
+			Jobs:
+			<!-- checked :tích sẵn -->
+			<input type="checkbox" name="jobs" value="1" checked > Dev
+			<input type="checkbox" name="jobs" value="2"> Tester
+			<input type="checkbox" name="jobs" value="3"> BA
+			<input type="checkbox" name="jobs" value="4"> PM
+			<br>
+			Gender:
+			<!-- với radio phải set name trùng nhau thì mới hoạt động-->
+			<input type="radio" name="GT" value="1" checked> Male
+			<input type="radio" name="GT" value="2"> Female
+			<input type="radio" name="GT" value="3"> Other
+			<br>
+			Country:
+			<select>
+				<option value="1">Viet Nam</option>
+				<option value="2">US</option>
+				<option value="3">UK</option>
+			</select>
+			<br>
+			Countries:
+			<select multiple>
+				<option value="1">Viet Nam</option>
+				<option value="2">US</option>
+				<option value="3">UK</option>
+				<option value="4">China</option>
+				<option value="5">Japan</option>
+				<option value="6">Korea</option>
+			</select>
+			<br>
+			Select your file:
+			<input type="file" name="file">
+			<br>
+			Select your files:
+			<input type="file" name="files" multiple>
+			<br>
+			Nhập dữ liệu trên nhiều dòng:
+			<!-- textarea hiểu được dấu cách trong nội dung của nó -->
+			<textarea rows="5" cols="20" placeholder="Nhập nhiều dòng"></textarea>
+			<input type="submit" name="" value="Sent info">
+<!-- nút Submit form gửi thông tin, có 2 cách gửi thông tin đi: click nút submit, ấn enter, ngoài ra còn có thể dùng button để submit-->
+<!-- nút reset form: trả lại form trạng thái ban đầu -->
+<input type="reset" name="" value="Reser form">
+		</form>
+		<button>Nhấp dô cưng!</button>
+		<br>
+		<br>
+		<!-- label đi kèm với input, click vào label sẽ tự nhảy vào input-->
+		<form action="" method="post">
+			<!-- for phải trùng id mới tạo đc hiệu ứng -->
+			<label for="abc">Username</label>
+			<br>
+			<br>
+			<input type="text" name="" id="abc">
+		</form>
+		<!-- thẻ center chỉ dùng trong html, sẽ bị bỏ khi dùng css -->
+		<center>This middle</center>
+		<!-- thẻ fieldset, legend: tạo form đẹp hơn	 -->
+		<form action="" method="get">
+			<fieldset>
+				<legend>Your name</legend>
+				<input type="texr" name="" value="abc">
+			</fieldset>
+		</form>
+		<!-- iframe nhúng trang web khác theo dạng của sổ iframe -->
+		<iframe src="https://vnexpress.net/" width="100%" height="200px"></iframe>
+		<!-- 1 số thẻ html5: section, article, header, footer, nav... -->
+		<header>THIS HEADER</header>
+		<footer>THIS FOOTER</footer>
+		<!-- các thuộc tính html5: required, readonly, min, max,...	 -->
+	</body>
+</html>
