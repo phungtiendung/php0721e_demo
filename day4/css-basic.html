@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS CƠ BẢN 1</title>
+</head>
+<body>
+	<style type="text/css">
+		/*các thuộc tính cơ bản css
+		1. background:  màu nền của selector, nền bằng ảnh*/
+		.p-bg {
+			background-color: #fde3c8;
+			background-image: url('minimal+wallpapers+33.jpg');
+			background-repeat: no-repeat; /*không lặp lại ảnh*/
+			background-position: center; /*căn vị trí ảnh nền*/
+			height: 293px;
+			/*cú pháp viết gộp background: 
+			background: #fde3c8 url('minimal+wallpapers+33.jpg') no-repeat center*/
+			/*nên ưu tiên gộp vì nó ngắn gọn hơn*/
+		}
+		#span-font {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial; /*dựa vào font có săn trên máy*/
+}
+#h1-text {
+    color: tomato;
+    text-align: center;
+    TEXT-DECORATION: underline;
+    text-transform: uppercase;
+    TEXT-SHADOW: 5px 5px 10px red;
+}
+	</style>
+<!-- công cụ của trình duyệt inspect (kiểm tra) html để css giúp không mất thời gian hơn -->
+<span id="span-font">
+	HAaaaaa
+</span>
+	<p class="p-bg">Hế Lu con cu các cậu !</p>
+	<h1 id="h1-text"> Nhìn cái gì</h1>
+</body>
+</html>

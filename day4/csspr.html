@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo CSS!</title>
+	<link rel="stylesheet" type="text/css" href="cssday4/democss.css">
+</head>
+<body>
+	<h1>Lorem,...</h1>\
+	<style type="text/css">
+		/* 4 Seclector cơ bản hay gặp
+		1. Selector theo tên thẻ, tác động toàn bộ thẻ cùng tên trên trang*/
+		p {
+			font-size: 30px;
+			background: pink;
+		}
+		/*2. Selector theo thuộc tính id (#) trên 1 trang không nên đặt id trùng nhau, class (.)*/
+		#link1 {
+			background: green;
+		}
+		.link2 {
+			background: yellow;
+		}
+		.u1 {
+			color: red;
+		}
+		/*3. Selector theo cấp dùng ký tự dấu cách khi dùng selector theo cấp, ngoài ra: > + ; */
+		div span {
+			color: red;
+		}
+		/*#div-1 span {
+			color: red;
+		}*/
+		/*4. Selectoe theo thuộc tính thẻ*/
+		input[type=text] {
+			background: #FFA883;
+		}
+		input[type=number] {
+			background: deeppink;
+		}
+		input[type=Password] {
+			background: grey;
+		}
+		/*5. Selector theo trang thái*/
+		#h2-hover:hover {
+			color: green;
+		}
+		/*Trạng thái theo vị trí, chỉ áp dụng trong cấu trúc cha-con trực tiếp*/
+		ul li:first-child {
+			background: #3e503c;
+		}
+		ul li:last-child {
+			background: #7f886a;
+		}
+		ul li:nth-child(2) {
+			background: #ff6f3d;
+		}
+		ul li:nth-child(3) {
+			background: #ffa883;
+		}
+	</style>
+<!-- + nhúng css trực tiếp trong file html: inline (có độ ưu tiên cao nhất, không có tính sử dụng lại)-->
+<h3 style="color: darkred; font-size: 20px;">nhúng css inline</h3>
+
+<!-- + Nhúng trực tiếp trong file html dùng cặp <style type="text/css"></style> (tách biệt code css ra khỏi html không có tính sử dụng lại trên hệ thống -->
+<!-- + nhúng từ file bên ngoài có đuôi .css  -->
+
+<ul>
+	<li>Thẻ li 1</li>
+	<li>Thẻ li 2</li>
+	<li>Thẻ li 3</li>
+	<li>Thẻ li 4</li>
+	<li>Thẻ li 5</li>
+</ul>
+
+	<h2 id="h2-hover">Touch here <33</h2>
+
+<form action="" method="post">
+	<input type="text" name="" type="dung">
+	<input type="number" name="" type="1234">
+	<input type="Password" name="" type="">
+</form>
+
+	<div id="div-1">
+		<span>span trong</span><br>
+		<span>span trong2</span>
+	</div>
+<span>span ngoài</span><br>
+
+	<a href="#" id="link1">A1...</a>
+	<a href="#" class="link2">A2...</a>
+	<a href="#" class="link2">A3...</a>
+	<u class="u1 u2 u3 u4"> thẻ u1</u>
+	<b id="b1id" class="b1class">thẻ b1</b>
+
+	<p> Thẻ 1</p>
+	<p> Thẻ 2</p>
+	<p> Thẻ 3</p>
+</body>
+</html>
