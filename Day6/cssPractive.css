@@ -1,0 +1,44 @@
+.body {
+	margin: 0;
+}
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+.header {
+	background: #333333;
+	text-align: center;
+	color: #ffffff;
+	padding: 50px 0 50px 0;
+}
+.heading {
+	margin: 0;
+}
+.row {
+	display: flex;
+}
+.links ul {
+	list-style: none;
+	padding-left: 20px;
+}
+.links {
+	background: #ccc;
+	width: 33.33%;
+}
+.content {
+	background: #f1f1f1;
+	width: 66.67%;
+	padding: 0px 20px;
+}
+.text-2 {
+	text-align: justify;
+}
+.hei {
+	min-height: 150px;
+}
+.footer {
+	background: #777777;
+	text-align: center;
+	color: #ffffff;
+	padding: 20px 0 20px 0;
+}

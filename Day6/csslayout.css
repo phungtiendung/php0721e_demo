@@ -1,0 +1,40 @@
+#div-1 {
+	background: pink;
+	float: left;
+	width: 30%;
+}
+#div-2 {
+	background: yellowgreen;
+	float: left;
+	width: 70%;
+}
+#row-1 {
+	border: 1px solid blueviolet;
+	overflow: auto;
+}
+#col-1 {
+	background: grey;
+	float: left;
+	width: 50%;
+}
+#col-2 {
+	background: violet;
+	float: left;
+	width: 50%;
+}
+.clearfix {
+	clear: both;
+}
+/* dựng layout bằng flex: */
+.row-flex {
+	border: 2px solid yellow;
+	display: flex;
+}
+.column1 {
+	background: palegreen;
+	width: 50%;
+}
+.column2 {
+	background: skyblue;
+	width: 50%;
+}

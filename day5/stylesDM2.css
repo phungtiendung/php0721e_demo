@@ -1,0 +1,127 @@
+#p-border {
+	/*border-color: red;
+	border-style: solid;
+	border-width: 5px;*/
+	border-radius: 5px;
+	border: 5px solid red;
+}
+#div-1-margin {
+	background: pink;
+	width: 100px;
+	height: 100px;
+	/*margin-top: 30px;
+	margin-left: 50px;
+	margin-bottom: 20px;*/
+	margin: 30px 0px 20px 50px;
+	/*gộp kiểu top-bottom, left-right: 
+	margin-top = margin-bottom = 30px
+	margin-left = margin-right = 40px
+	*/
+	/* cả 4 hướng top-right-bottom-left: margin: 50px */
+}
+#div-2-margin {
+	background: blue;
+	width: 200px;
+	height: 200px;
+}
+#div-padding {
+	background: grey;
+	border: 3px solid black;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	/*viết gộp giống margin*/
+}
+#p-width-height {
+	background: #ffa883;
+	min-width: 10px;
+	max-width: 50px;
+}
+#div-1-position {
+	background: red;
+	width: 100px;
+	height: 100px;
+}
+#div-2-position {
+	background: yellow;
+	width: 150px;
+	height: 150px;
+}
+#div-fixed {
+/* position: fixed : hiển thị cố định trên trang, kể cả scroll chuột (hiển thị quảng cáo) */
+	background: purple;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	right: 0;
+	top: 20px;
+/* position: nếu web là 1 mặt phẳng nước, khi 1 phần tử có css position, nó lơ lửng trên mặt nước (tương tự layer ps) */
+}
+#div-relative {
+/* tương đối, căn theo chính nó */
+	background: palegreen;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 50px;
+	top: 40px;
+}
+#parent {
+/* căn theo relative cha gần nhất, nếu không thì theo body */
+	background: greenyellow;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: 400px;
+}
+.child {
+	background: grey;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 30px;
+	bottom: 0;
+}
+/*z-index: thứ tự ưu tiên hiển thị của selector có positions*/
+#z-div-1 {
+	background: blueviolet;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+}
+.position-common{
+	position: absolute;
+}
+#z-div-2 {
+	background: skyblue;
+	width: 100px;
+	height: 100px;
+	z-index: 2;
+	/*nếu không set, mặc định sẽ là 0*/
+}
+#z-div-3 {
+	background: violet;
+	width: 50px;
+	height: 50px;
+}
+/*Overflow:  xác định cách hiển thị khi nội dung tràn viền*/
+#div-overflow {
+	background: cyan;
+	width: 50px;
+	overflow: scroll;
+	/*overflow: hidden;*/
+}
+#div-opacity {
+	background: blueviolet;
+	opacity: 0.5;
+	/*max=1, min=0*/
+}
+#h1-transition:hover {
+	/*hover để thay đổi hiệu ứng khi di chuột vào*/
+	background: palegreen;
+	color: brown;
+	/*transition: all 3s ease;*/
+}
+#h1-transition {
+	transition: all 3s ease;
+}
